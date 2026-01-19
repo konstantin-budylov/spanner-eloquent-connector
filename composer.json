@@ -1,0 +1,32 @@
+{
+  "name": "konstantin-budylov/eloquent-spanner-connector",
+  "description": "Eloquent driver for Google Cloud Spanner — extended connector integrating Spanner with Laravel Eloquent.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.0",
+    "laravel/framework": "^10.32",
+    "colopl/laravel-spanner": "^7.3.0",
+    "google/cloud-spanner": "^1.0 || ^2.0 || ^3.0",
+    "barryvdh/laravel-debugbar": "^3.6 || ^4.0",
+    "ramsey/uuid": "^4.0",
+    "psr/cache": "^1.0 || ^2.0 || ^3.0",
+    "symfony/lock": "^5.0 || ^6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0 || ^10.0",
+    "friendsofphp/php-cs-fixer": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "KonstantinBudylov\\EloquentSpanner\\": "Src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "KonstantinBudylov\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
